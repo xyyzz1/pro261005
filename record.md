@@ -319,4 +319,33 @@ cd /home/xyyzz1/pro261005
 - val 集 52 实例：平均角点误差 112.0 px（与 s2_p1 模型当前泛化水平一致，待后续训练提升）
 - 产物：`s2_p2_result/predictions.json`（每实例 8 角点 + GT + error_norm）、`s2_p2_result/visualize/*.png`（6 张）
 
+## 版本管理：上传到 GitHub（2026-10-11）
+
+- 目标：将项目文件上传到 GitHub 仓库 https://github.com/xyyzz1/pro261005
+
+### 编写操作
+
+| 文件 | 操作 | 说明 |
+|---|---|---|
+| `./.gitignore` | 新建 | 排除 BoxDreamer（第三方）、`__pycache__`、`tmp`、模型权重 `*.pt`/`*.pth`/`*.onnx`/`*.ckpt`、`runs/` |
+
+### 执行的命令
+
+```bash
+cd /home/xyyzz1/pro261005
+git init -b main
+git config user.name "xyyzz1"
+git config user.email "xyyzz1@users.noreply.github.com"
+git remote add origin git@github.com:xyyzz1/pro261005.git
+git add -A
+git commit -m "初始提交：BOP→YOLO11 检测 + resnet18 热图关键点训练流水线"
+git push -u origin main
+```
+
+### 结果
+
+- 远程仓库为空，直接推送 `main` 分支成功
+- 上传范围：代码 + 文档（record.md）+ 数据（`my_dataset_corners`、`s2_p0_data`）+ 小结果产物，共 1365 个文件 / 26.6 MB
+- 排除：`BoxDreamer`（第三方 zju3dv 仓库）、模型权重（`yolo11n.pt`、`s2_p1_result/weights/*.pth`）、`__pycache__`、`tmp`
+
 

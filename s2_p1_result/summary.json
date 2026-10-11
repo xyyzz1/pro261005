@@ -1,0 +1,27 @@
+{
+  "epochs": 100,
+  "batch_size": 16,
+  "lr_backbone": 0.0001,
+  "lr_decoder": 0.001,
+  "freeze_backbone": false,
+  "sigma": 2.0,
+  "num_train": 208,
+  "num_val": 52,
+  "train_loss_first": 0.3231232796724026,
+  "train_loss_last": 0.038521834290944613,
+  "val_loss_first": 0.3013505981518672,
+  "val_loss_last": 0.09006574635322277,
+  "best_val_loss": 0.08254721302252549,
+  "mean_corner_error_norm": 0.4391528069972992,
+  "mean_corner_error_px": 112.4231185913086,
+  "corner_order": [
+    "(min_x,min_y,min_z)",
+    "(max_x,min_y,min_z)",
+    "(min_x,max_y,min_z)",
+    "(max_x,max_y,min_z)",
+    "(min_x,min_y,max_z)",
+    "(max_x,min_y,max_z)",
+    "(min_x,max_y,max_z)",
+    "(max_x,max_y,max_z)"
+  ]
+}

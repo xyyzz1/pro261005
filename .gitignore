@@ -1,0 +1,18 @@
+# 第三方仓库（zju3dv/BoxDreamer，含嵌套 git / 子模块，不纳入本仓库）
+BoxDreamer/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# 临时文件
+tmp/
+
+# 模型权重（体积大，不纳入版本控制）
+*.pt
+*.pth
+*.onnx
+*.ckpt
+
+# 训练/推理运行产物
+runs/

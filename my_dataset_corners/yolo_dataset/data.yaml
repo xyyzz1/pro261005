@@ -1,0 +1,6 @@
+path: /home/xyyzz1/pro261005/my_dataset_corners/yolo_dataset
+train: images/train
+val: images/val
+nc: 1
+names:
+  0: obj_000001
